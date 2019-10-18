@@ -1,0 +1,63 @@
+.jd_layout{
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    background-color: #cccccc;
+    margin: 0 auto;
+    height: 1000px;
+}
+.jd_search{
+    width: 100%;
+    height: 40px;
+    max-width: 640px;
+    /*定位到顶部不动*/
+    position: fixed;
+    background-color: #e92322;
+    position: relative;
+}
+.jd_logo{
+    width: 56px;
+    height: 30px;
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    background: url("../images/jd-sprites.png");
+    /*设置背景大小*/
+    background-size: 200px 200px;
+    background-position: 0px -108px;
+}
+.jd_searchBox{
+    height: 100%;
+    width: 100%;
+    /*padding: 0 100px;*/
+    padding-left: 78px;
+    padding-right: 50px;
+}
+.jd_login{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 40px;
+    color: #fff;
+}
+.jd_searchBox input{
+    height: 30px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 15px;
+    padding-left: 30px;
+    color: #666;
+}
+/*伪元素添加文字图标*/
+.jd_searchBox::before {
+    content: "";
+    width: 27px;
+    height: 23px;
+    position: absolute;
+    top: 8px;
+    background: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: -56px -108px;
+}
